@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 
 <body>
@@ -13,30 +13,49 @@
     </header>
     <main>
         <div>
-            <h2>Bienvenido a nuestro formulario de contacto</h2>
-            <p>
-                Favor ingresa los campos solicitados en este formulario para poder comunicarnos con usted.
-            </p>
+            <h3> Favor ingresa los campos solicitados en este formulario para poder comunicarnos con usted. </h3>
         </div>
         <form>
             <div>
-              <label for="nombre"> Nombre:</label>
-                <input type="text" name="Nombre">
+                <label for="nombre"> Nombre:</label>
+                <input type="text" name="Nombre" />
             </div>
             <div>
                 <label for=" Apellido"> Apellido </label>
                 <input type="text" name="Apellido">
             </div>
+
             <div>
                 <label for="Email">Correo Electronico:</label>
-                <input type="email"> 
+                <input type="text" name="Correo">
             </div>
             <label for="edad">Edad: </label>
-            <input type="number" name="edad"/>
+            <input type="number" name="edad" />
             <div>
-                              
-            <button>Enviar</button>
-            
+                <div>
+                    <label for="genero">Seleccione el sexo</label> <br>
+                    <input type="radio" id="femenino" name="genero" value="Femenino">Femenino <br>
+                    <input type="radio" id="masculino" name="genero" value="Masculino">Masculino <br>
+                </div>
+                <div>
+                    <label for="pais">Seleccione su Pais</label> <br>
+                    <select name="pais" id="pais">
+                        <option value=""></option>
+                        <option value="mexico">Mexico</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="el salvador">El Salvador</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="nicaragua">Nicaragua</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentario">Comentarios</label> <br>
+                    <textarea id="comentario" name="comentario" cols="20" rows="5" maxlength="50"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+
+
+
         </form>
     </main>
 </body>
